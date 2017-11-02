@@ -1,0 +1,40 @@
+div.top-bar{
+	background-color: #21540f;
+	padding: 5px;
+}
+
+.top-bar .menu a{
+	color: white;
+	font-size: 25px;
+}
+
+.content .sub-menu{
+	background-color: #54a551;
+	float: left;
+}
+
+.content .sub-menu i{
+	font-size: 25px;
+}
+
+.content .sub-menu p{
+	padding: 5px;
+	text-align: center;
+}
+
+.content .sub-menu a{
+	text-decoration: none;
+	color: white;
+}
+
+.content{
+	border-bottom: 3px solid yellow;
+}
+
+.details{
+	padding: 10px;
+}
+.details .row h6{
+	margin-top:25px;
+	margin-bottom: 30px;
+}
