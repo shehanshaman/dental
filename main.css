@@ -1,6 +1,7 @@
 div.top-bar{
 	background-color: #21540f;
-	padding: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .top-bar .menu a{
@@ -8,6 +9,11 @@ div.top-bar{
 	font-size: 25px;
 }
 
+body {background-color: #f9f9f9;}
+
+.details{
+	color: gray;
+}
 .content .sub-menu{
 	background-color: #54a551;
 	float: left;
@@ -27,14 +33,28 @@ div.top-bar{
 	color: white;
 }
 
-.content{
-	border-bottom: 3px solid yellow;
+.content input{
+	float: left;
 }
 
-.details{
-	padding: 10px;
+.star{
+	color: red;
 }
-.details .row h6{
-	margin-top:25px;
-	margin-bottom: 30px;
+
+.row1 .col-lg-7 .dropdown{
+	display: inline-block;
+	float: left;
 }
+
+.row1 .col-lg-7 .in{
+	padding-right: 0;
+	padding-left: 0px;
+	display: inline-block;
+	float: left;
+}
+
+.row1 .col-lg-7 .search{
+	display: inline-block;
+	float: left;
+}
+

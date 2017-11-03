@@ -3,8 +3,11 @@
 <head>
 	<title>Group 4</title>
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 	<div class="top-bar col-sm-12">
@@ -66,29 +69,75 @@
 		</div><!-- sub-menu -->
 		<form action="">
 			<div class="details">
-			<div class="row">
-				<div class="col-lg-5">
-					<button class="btn btn-primary">Add New</button>
-					<button class="btn btn-success">List</button>
+				<div class="row1">
+					<div class="col-lg-4">
+						<button class="btn btn-primary">Add New</button>
+						<button class="btn btn-success">List</button>
+					</div>
+					<div class="col-lg-7">
+					
+						<div class="dropdown">
+						  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Search By
+						  <span class="caret"></span></button>
+						  <ul class="dropdown-menu">
+						    <li><a href="#">HTML</a></li>
+						    <li><a href="#">CSS</a></li>
+						    <li><a href="#">JavaScript</a></li>
+						  </ul>
+						</div>
+						<div class="in col-lg-9">
+							<input  type="text" class="form-control" name="msg" placeholder="default is serial">
+						</div>
+						<div class="search">
+							<button type="button" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</div>
+					</div>
 				</div>
-				<div class="col-lg-6 btn-group input-group">
-					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Search By
-						<span class="caret"></span>
-					</button>
-					<ul class="dropdown-menu" role="menu">
-				      <li><a href="#">Tablet</a></li>
-				      <li><a href="#">Smartphone</a></li>
-				    </ul>
-				    <input id="search" type="text" class="form-control" name="search" placeholder="default in serial">
-				    <button type="button" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+
+				<div class="row2">
+					<div class="col-lg-11">
+						<h4>Patient Registration</h4>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					 <h6><span class="label label-default">Patient Registration</span></h6>
+
+				<div class="row3">
+					<div class="col-lg-11">
+						Patient Name:<span class="star">*</span>
+					</div>
 				</div>
-			</div>
-		</div><!-- details -->
+
+				<div class="row4">
+					<div class="col-lg-11">
+						<select name="title" class="col-lg-2 btn">
+							  <option value="Mr."> Mr.</option>
+							  <option value="Mrs."> Mrs.</option>
+							  <option value="Miss"> Miss</option>
+							  <option value="Ms."> Ms.</option>
+							  <option value="Dr."> Dr.</option>
+						</select>
+						<div class="col-lg-3">
+							<input  type="text" class="form-control" name="msg" placeholder="Surname">
+						</div>
+						<div class="col-lg-3">
+							<input  type="text" class="form-control" name="msg" placeholder="INITIALS">
+						</div>
+						<div class="col-lg-3">
+							<input  type="text" class="form-control" name="msg" placeholder="First Name">
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row5">
+					<div class="col-lg-2">
+					  Child<input type="checkbox" value="">
+					</div>
+					<div class="col-lg-3">
+							<input  type="text" class="form-control" name="nic" placeholder="NIC">
+					</div>
+				</div>
+			
+			</div><!-- details -->
 		</form>
 	
 	</div>
