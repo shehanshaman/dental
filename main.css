@@ -1,6 +1,8 @@
 div.top-bar{
 	background-color: #21540f;
-	padding: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .top-bar .menu a{
@@ -8,9 +10,17 @@ div.top-bar{
 	font-size: 25px;
 }
 
+body {background-color: #f9f9f9;}
+
+.details{
+	color: gray;
+}
 .content .sub-menu{
 	background-color: #54a551;
 	float: left;
+	height: 580px;
+	padding-top: 10px;
+	margin-top: -5px;
 }
 
 .content .sub-menu i{
@@ -27,14 +37,69 @@ div.top-bar{
 	color: white;
 }
 
-.content{
-	border-bottom: 3px solid yellow;
+.content input{
+	float: left;
 }
 
-.details{
-	padding: 10px;
+.star{
+	color: red;
 }
-.details .row h6{
-	margin-top:25px;
-	margin-bottom: 30px;
+
+.row1 .col-lg-7 .dropdown{
+	display: inline-block;
+	float: left;
+}
+
+.row1 .col-lg-7 .in{
+	padding-right: 0;
+	padding-left: 0px;
+	display: inline-block;
+	float: left;
+}
+
+.row1 .col-lg-7 .search{
+	display: inline-block;
+	float: left;
+}
+
+.col-lg-11 select{
+	border: 1px solid #d3d1d1;
+}
+
+.bottom-bar{
+	height: auto;
+	background-color: #21540f;
+	color: white;
+	text-align: center;
+	border-top: 2px solid yellow;
+	padding-top: 8px;
+	font-size: 12px;
+}
+
+.col-lg-11{
+	padding: 3px;
+}
+
+.panel{
+	height: 30px;
+}
+
+.panel-body{
+	display: inline-block;
+	margin-top: -10px;
+}
+
+.drop{
+	margin-left: 15px;
+	width: 280px;
+}
+
+.nationalaty{
+	margin-left: 10px;
+}
+
+.submit-button{
+	border-top: 1px solid #d3d1d1;
+	padding-top: 10px;
+	margin-top: 15px;
 }
