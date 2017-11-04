@@ -2,7 +2,8 @@ div.top-bar{
 	background-color: #21540f;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 5px;	
+	height: 60px;
 }
 
 .top-bar .menu a{
@@ -10,17 +11,30 @@ div.top-bar{
 	font-size: 25px;
 }
 
-body {background-color: #f9f9f9;}
+body {
+	background-color: #f9f9f9;
+}
 
 .details{
 	color: gray;
 }
 .content .sub-menu{
-	background-color: #54a551;
+	background-color: #3B9943;
 	float: left;
-	height: 580px;
+	height: 660px;
 	padding-top: 10px;
 	margin-top: -5px;
+}
+
+.col-lg-2 {
+	margin-left: 5px;
+	color: 	#4682b4;
+}
+
+
+h4{
+	margin-left: 5px;
+	color: 	#4682b4;
 }
 
 .content .sub-menu i{
@@ -35,6 +49,8 @@ body {background-color: #f9f9f9;}
 .content .sub-menu a{
 	text-decoration: none;
 	color: white;
+	font-size: 10px;
+	align-items: center;
 }
 
 .content input{
@@ -45,25 +61,22 @@ body {background-color: #f9f9f9;}
 	color: red;
 }
 
-.row1 .col-lg-7 .dropdown{
+.row1 .col-lg-3 .dropdown{
 	display: inline-block;
-	float: left;
+	float: right; 
 }
 
-.row1 .col-lg-7 .in{
+.row1 .col-lg-6 .form-control{
 	padding-right: 0;
 	padding-left: 0px;
 	display: inline-block;
 	float: left;
+	width: 85%;
 }
 
-.row1 .col-lg-7 .search{
-	display: inline-block;
-	float: left;
-}
-
-.col-lg-11 select{
+#select{
 	border: 1px solid #d3d1d1;
+	color: gray;
 }
 
 .bottom-bar{
@@ -77,7 +90,8 @@ body {background-color: #f9f9f9;}
 }
 
 .col-lg-11{
-	padding: 3px;
+	padding: 6px;
+	margin-left: 10px;
 }
 
 .panel{
@@ -92,6 +106,7 @@ body {background-color: #f9f9f9;}
 .drop{
 	margin-left: 15px;
 	width: 280px;
+	border-color: #d3d1d1;
 }
 
 .nationalaty{
@@ -103,3 +118,8 @@ body {background-color: #f9f9f9;}
 	padding-top: 10px;
 	margin-top: 15px;
 }
+
+.sub-menu{
+	width: 80px;
+}
+
