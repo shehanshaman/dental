@@ -4,9 +4,9 @@
 	<title>Group 4</title>
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="css/bootsrapnew.css">
+  	<script src="js/newjs.js"></script>
+  	<script src="js/new1js.js"></script>
   	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
@@ -20,6 +20,7 @@
 	</div>
 
 	<div class="content">
+		<center>
 		<div class="sub-menu col-sm-1">
 			<p>
 				<a href="#">
@@ -45,7 +46,7 @@
 			</p>
 			<p>
 				<a href="#">
-					<i class="fa fa-university" aria-hidden="true"></i><br>
+					<i class="fa fa-university" aria-hidden="true"></i>
 					Departments
 				</a>
 			</p><p>
@@ -57,7 +58,7 @@
 			<p>
 				<a href="#">
 					<i class="fa fa-user" aria-hidden="true"></i><br>
-					users
+					Users
 				</a>
 			</p>
 			<p>
@@ -67,48 +68,57 @@
 				</a>
 			</p>
 		</div><!-- sub-menu -->
+			
+		</center>
 		<form action="">
-			<div class="details">
+
+			<div class="details">	
+
 				<div class="row1">
-					<div class="col-lg-4">
-						<button class="btn btn-primary">Add New</button>
-						<button class="btn btn-success">List</button>
+					<div class="col-lg-2">
+							<button style="margin-top: 7px;" class="btn btn-primary">Add New</button>
+							<button style="margin-top: 7px;" class="btn btn-success">List</button>					
 					</div>
-					<div class="col-lg-7">
-					
-						<div class="dropdown">
-						  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Search By
-						  <span class="caret"></span></button>
-						  <ul class="dropdown-menu">
-						    <li><a href="#">HTML</a></li>
-						    <li><a href="#">CSS</a></li>
-						    <li><a href="#">JavaScript</a></li>
-						  </ul>
-						</div>
-						<div class="in col-lg-9">
-							<input  type="text" class="form-control" name="msg" placeholder="default is serial">
-						</div>
-						<div class="search">
-							<button type="button" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-						</div>
+					<div class="col-lg-3">
+							<div class="dropdown">
+							  <button style="margin-top: 7px; margin-right: 40px" class="btn dropdown-toggle" type="button" data-toggle="dropdown">Search By
+							  <span class="caret"></span></button>
+							  <ul class="dropdown-menu">
+							    <li><a href="#">HTML</a></li>
+							    <li><a href="#">CSS</a></li>
+							    <li><a href="#">JavaScript</a></li>
+							  </ul>
+							</div>
 					</div>
+					<div class="col-lg-6">						
+							<div>
+								<input style="margin-top: 7px;" type="text" class="form-control" name="msg" placeholder="default is serial">
+							</div>
+							<div class="search">
+								<button style="margin-top: 7px;" type="button" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+							</div>						
+					</div>				
+				</div>
+
+				<div class="row1">
+					<div class="col-lg-11">
+						<div class="">
+							<h4>Patient Registration</h4>
+						</div>
+					</div>					
+				</div>
+
+				<div class="row1">
+					<div class="col-lg-11">
+						<div style="color: 	#4682b4;margin-left: 5px;" class="">
+							Patient Name:<span class="star">*</span>
+						</div>
+					</div>					
 				</div>
 
 				<div class="col-lg-11">
 					<div class="">
-						<h4>Patient Registration</h4>
-					</div>
-				</div>
-
-				<div class="col-lg-11">
-					<div class="">
-						Patient Name:<span class="star">*</span>
-					</div>
-				</div>
-
-				<div class="col-lg-11">
-					<div class="">
-						<select name="title" class="col-lg-2 btn">
+						<select id="select" name="title" class="col-lg-2 btn">
 							  <option value="Mr."> Mr.</option>
 							  <option value="Mrs."> Mrs.</option>
 							  <option value="Miss"> Miss</option>
@@ -161,56 +171,60 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-lg-11">
 					<div class="col-lg-2">
-					  	Ethnicity:	
-					</div>
-					<div class="">
-						<select name="title" class="col-lg-3 btn drop">
+						Ethnicity:
+					</div>	
+						<div class="col-lg-3">
+						<select style="float: right; width: 100%;" name="district" class="col-lg-3 btn drop">
 						  <option value="sinhala"> Sinhala</option>
 						  <option value="tamil"> Tamil</option>
 						  <option value="english"> English</option>
 						</select>
-					</div>
+						</div>
 				</div>
 
 				<div class="col-lg-11">
 					<div class="col-lg-2">
-					  	District:	
-					</div>
-					<div class="">
-						<select name="district" class="col-lg-3 btn drop">
+						District:
+					</div>	
+						<div class="col-lg-3">
+						<select style="float: right; width: 100%;" name="district" class="col-lg-3 btn drop">
 						  <option value="kandy"> Kandy</option>
 						  <option value="colombo"> Colombo</option>
 						  <option value="Gampaha"> Gampaha</option>
 						</select>
-					</div>
-					<div class="col-lg-2 nationalaty">
-					  	Nationalaty:	
-					</div>
-					<div class="">
-						<select name="nationalaty" class="col-lg-3 btn drop">
-						  <option value="sri-lanaka"> Sri lanaka</option>
-						  <option value="colombo"> Other</option>
-						</select>
-					</div>
+						</div>
+						<div class="col-lg-2">
+							Nationalaty:
+						</div>
+						<div class="col-lg-4">
+							<select style="float: left; width: 75%;" name="nationalaty" class="btn drop">
+							  <option value="sri-lanaka"> Sri lanaka</option>
+							  <option value="colombo"> Other</option>
+							</select>
+						</div>
+					
 				</div>
+
 
 				<div class="col-lg-11">
 					<div class="col-lg-2">
-					  	Phone number:	
-					</div>
-					<div class="col-lg-3">
-						<input  type="text" class="form-control" name="phone" placeholder="">
-					</div>
-					<div class="col-lg-2">
-					  	E-mail:	
-					</div>
-					<div class="col-lg-3">
-						<input  type="text" class="form-control" name="email" placeholder="">
-					</div>
+						Phone number:
+					</div>	
+						<div class="col-lg-3">
+							<input  type="text" class="form-control" name="phone" placeholder="">
+						</div>
+						<div class="col-lg-2">
+							E-mail:
+						</div>
+						<div class="col-lg-4">
+							<input style="margin-left: 14px; width: 75%"  type="text" class="form-control" name="email" placeholder="">
+						</div>
+					
 				</div>
+
 
 				<div class="col-lg-11">
 					<div class="col-lg-2">
@@ -223,7 +237,7 @@
 
 				<div class="col-lg-11">
 					<div class="col-lg-2">
-					  Referral<input type="checkbox" value="">
+					  <input type="checkbox" value="">Referral
 					</div>
 					<div class="col-lg-3">
 						<input  type="text" class="form-control" name="referral-body" placeholder="Referral Body">
